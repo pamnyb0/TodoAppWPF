@@ -1,0 +1,18 @@
+﻿<Window x:Class="TodoAppWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="To-Do App" Height="450" Width="800">
+    <Grid Margin="10">
+        <!-- TextBox för att skriva uppgifter -->
+        <TextBox Name="TaskTextBox" Width="500" Height="30" VerticalAlignment="Top"/>
+
+        <!-- Knapp för att lägga till uppgifter -->
+        <Button Content="Lägg till uppgift" Width="100" Height="30" VerticalAlignment="Top" Margin="510,0,0,0" Click="AddButton_Click"/>
+
+        <!-- ListBox för att visa alla uppgifter -->
+        <ListBox Name="TasksListBox" Margin="0,40,0,40"/>
+
+        <!-- Knapp för att ta bort uppgifter -->
+        <Button Content="Ta bort uppgift" Width="100" Height="30" VerticalAlignment="Bottom" Click="RemoveButton_Click"/>
+    </Grid>
+</Window>
